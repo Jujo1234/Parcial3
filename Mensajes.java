@@ -10,7 +10,7 @@ public class Mensajes {
     public static final String INTRODUCIR_PORCENTAJE = "Introduzca el porcentaje de aumento de salario: ";
 
     /**
-     * Mensaje para mostrar la lista de empleados.
+     * Mensaje para mostrar la lista de empleados. -- Todos los empleados
      */
     public static final String LISTA_EMPLEADOS = "Lista de Empleados:";
 }

@@ -1,5 +1,5 @@
 /**
- * Clase que representa a un empleado con nombre, cargo y salario.
+ * Clase que representa a un empleado con nombre, cargo y salario..
  */
 public class Empleado {
 

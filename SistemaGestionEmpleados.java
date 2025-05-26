@@ -21,7 +21,7 @@ public class SistemaGestionEmpleados {
     }
 
     /**
-     * Obtiene el array de empleados.
+     * Obtiene el array de empleados..
      *
      * @return Array de empleados.
      */

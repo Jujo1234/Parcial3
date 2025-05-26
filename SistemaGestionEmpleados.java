@@ -34,16 +34,5 @@ public class SistemaGestionEmpleados {
         SistemaGestionEmpleados sistema = new SistemaGestionEmpleados(empleados);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduzca el porcentaje de aumento de salario: ");
+        System.out.print(Mensajes.INTRODUCIR_PORCENTAJE); // Uso de constante
         double porcentaje = scanner.nextDouble();
-
-        sistema.aumentarSalario(porcentaje);
-
-        System.out.println("Lista de Empleados:");
-        for (Empleado empleado : sistema.getEmpleados()) { // Usamos el getter
-            System.out.println(empleado);
-        }
-
-        scanner.close();
-    }
-}

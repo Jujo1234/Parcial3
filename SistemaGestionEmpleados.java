@@ -8,6 +8,16 @@ public class SistemaGestionEmpleados {
         this.empleados = empleados;
     }
 
+    // Getter para empleados
+    public Empleado[] getEmpleados() {
+        return empleados;
+    }
+
+    // Setter para empleados
+    public void setEmpleados(Empleado[] empleados) {
+        this.empleados = empleados;
+    }
+
     public void aumentarSalario(double porcentaje) {
         for (Empleado empleado : empleados) {
             double nuevoSalario = empleado.salario * (1 + porcentaje / 100);
@@ -28,9 +38,9 @@ public class SistemaGestionEmpleados {
         double porcentaje = scanner.nextDouble();
 
         sistema.aumentarSalario(porcentaje);
-        
+
         System.out.println("Lista de Empleados:");
-        for (Empleado empleado : empleados) {
+        for (Empleado empleado : sistema.getEmpleados()) { // Usamos el getter
             System.out.println(empleado);
         }
 

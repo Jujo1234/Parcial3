@@ -1,27 +1,47 @@
-import java.util.ArrayList;
-import java.util.List;
+/**
+ * Clase que representa a un empleado con nombre, cargo y salario.
+ */
+public class Empleado {
 
-class Empleados {
-    List<Empleado> lista;
+    /**
+     * Nombre del empleado.
+     */
+    private String nombre;
 
-    public Empleados() {
-        this.lista = new ArrayList<>();
+    /**
+     * Cargo del empleado.
+     */
+    private String cargo;
+
+    /**
+     * Salario del empleado.
+     */
+    double salario;
+
+    /**
+     * Constructor de la clase Empleado.
+     *
+     * @param nombre Nombre del empleado.
+     * @param cargo Cargo del empleado.
+     * @param salario Salario del empleado.
+     */
+    public Empleado(String nombre, String cargo, double salario) {
+        this.nombre = nombre;
+        this.cargo = cargo;
+        this.salario = salario;
     }
 
-    public void darDeAlta(Empleado empleado) {
-        lista.add(empleado);
-    }
-
-    public void aumentarSalario(double porcentaje) {
-        for (Empleado empleado : lista) {
-            double nuevoSalario = empleado.getSalario() * (1 + porcentaje / 100);
-            empleado.setSalario(nuevoSalario);
-        }
-    }
-
-    public void mostrarListado() {
-        for (Empleado empleado : lista) {
-            System.out.println(empleado);
-        }
+    /**
+     * Devuelve una representación en cadena del empleado.
+     *
+     * @return Cadena con la información del empleado.
+     */
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "nombre='" + nombre + '\'' +
+                ", cargo='" + cargo + '\'' +
+                ", salario=" + salario +
+                '}';
     }
 }
